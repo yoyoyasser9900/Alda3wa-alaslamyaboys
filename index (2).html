@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>تسجيل الدخول</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: linear-gradient(135deg, #6a0dad, #9b30ff);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .login-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 40px;
+      width: 320px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    .avatar {
+      width: 80px;
+      height: 80px;
+      background: #6a0dad;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 36px;
+    }
+    h2 {
+      margin: 0 0 20px;
+      color: #333;
+    }
+    .input-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+    }
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    .login-card button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      background: #6a0dad;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .login-card button:hover {
+      background: #5a0ca0;
+    }
+    .login-card .options {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+    .login-card .options a {
+      color: #6a0dad;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-card">
+    <div class="avatar">👤</div>
+    <h2>تسجيل الدخول</h2>
+    <div class="input-group">
+      <label for="email">البريد الإلكتروني</label>
+      <input id="email" type="email" placeholder="example@mail.com">
+    </div>
+    <div class="input-group">
+      <label for="pass">كلمة المرور</label>
+      <input id="pass" type="password" placeholder="••••••••">
+    </div>
+    <button>دخول</button>
+    <div class="options">
+      <a href="#">تذكرني</a> |
+      <a href="#">نسيت كلمة المرور؟</a>
+    </div>
+  </div>
+</body>
+</html>
